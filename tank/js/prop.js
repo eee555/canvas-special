@@ -18,6 +18,8 @@ var Prop = function(context){
 		this.x = parseInt(Math.random() * 384)+map.offsetX;
 		this.y = parseInt(Math.random() * 384)+map.offsetY;
 		this.isDestroyed = false;
+		this.type = 2;
+		this.isHit();
 	};
 	
 	this.draw = function(){
@@ -52,8 +54,8 @@ var Prop = function(context){
 				emenyStopTime = 500;
 				break;
 			case 2:
-				var mapChangeIndex = [[23,11],[23,12],[23,13],[23,14],[24,11],[24,14],[25,11],[25,14]];
-				map.updateMap(mapChangeIndex,GRID);
+				let mapChangeIndex = [[23,11],[23,12],[23,13],[23,14],[24,11],[24,14],[25,11],[25,14]];
+				map.updateMap(mapChangeIndex, GRID);
 				homeProtectedTime = 500;
 				break;
 			case 3:

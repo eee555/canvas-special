@@ -14,7 +14,7 @@ RESOURCE_IMAGE.src = "images/tankAll.gif";
 
 
 /**************各个图块在图片中的位置*****************/
-var POS = new Array();
+let POS = new Array();
 POS["selectTank"] = [128,96];
 POS["stageLevel"] = [396,96];
 POS["num"] = [256,96];
@@ -51,29 +51,29 @@ var GAME_STATE_OVER = 3;
 var GAME_STATE_WIN = 4;
 
 /**************地图块*****************/
-var WALL = 1;
-var GRID = 2;
-var GRASS = 3;
-var WATER = 4;
-var ICE = 5;
-var HOME = 9;
-var ANOTHREHOME = 8;
+let WALL = 1;
+let GRID = 2;
+let GRASS = 3;
+let WATER = 4;
+let ICE = 5;
+let HOME = 9;
+let ANOTHREHOME = 8;
 
 /**************坦克及子弹的四个方向*****************/
-var UP = 0;
-var DOWN = 1;
-var LEFT = 2;
-var RIGHT = 3;
+let UP = 0;
+let DOWN = 1;
+let LEFT = 2;
+let RIGHT = 3;
 
 /**************坦克及子弹的四个方向*****************/
-var ENEMY_LOCATION = [192,0,384]; //相对与主游戏区
+let ENEMY_LOCATION = [192,0,384]; //相对与主游戏区
 
 /**************子弹类型*****************/
-var BULLET_TYPE_PLAYER = 1;
-var BULLET_TYPE_ENEMY = 2;
+let BULLET_TYPE_PLAYER = 1;
+let BULLET_TYPE_ENEMY = 2;
 /**************爆炸类型****************/
-var CRACK_TYPE_TANK = "tank";
-var CRACK_TYPE_BULLET = "bullet";
+let CRACK_TYPE_TANK = "tank";
+let CRACK_TYPE_BULLET = "bullet";
 
 
 
